@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^([^.]*\.css)$ less/lessphp.php?file=$1 [R,QSA,L]
+</ifModule>
